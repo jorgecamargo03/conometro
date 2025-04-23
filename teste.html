@@ -1,0 +1,30 @@
+<div id="contador">0</div>
+<button onclick="iniciarContador()">Começar</button>
+
+<script>
+  let valor = 0
+  let intervalo
+
+  function iniciarContador() {
+    intervalo = setInterval(() => {
+      valor++
+      document.getElementById("contador").textContent = valor
+
+      if (valor === 10) {
+        clearInterval(intervalo)
+      }
+    }, 500) // meio segundo
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

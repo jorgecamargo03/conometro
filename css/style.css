@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Orbitron;
+}
+body{
+    background-image: url(../img/bg-zika.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap:2rem ;
+    padding-top:3rem ;
+   background-color: rgba(211, 211, 211, 0.47);
+    height: 50vh;
+    width: 90%;
+    max-width: 445px;
+    border: 2px solid #333;
+    border-radius: 30%;
+}
+.conteiner h1{
+    color: blue;
+}
+.timer{
+    display: flex;
+    font-weight: bold;
+    color:#333;
+    font-size: 55px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #172953;
+    width: 120px;
+}
+.separator{
+   
+    padding: 0 10px;
+    color: #525763;
+}
+#miliseconds{
+    font-size: 30px;
+    color: #525763 ;
+}
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    gap: 1rem;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px #ccc;
+    transition:all 0.2 ease-in-out;
+}
+.btn:hover{
+transform: scale(1.1);
+}
+
+#start{
+    background-color: #0039be;
+    color: #ffff;
+}
+#pause, #resume{
+display: none;
+}
